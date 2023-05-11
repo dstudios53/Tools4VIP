@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Free Unlimited online OCR converter
+    </title>
+    <meta name="description"
+        content="Use this free online OCR converter to copy text from images and converts them to an editable format.">
+
+    <meta property="og:site_name" content="Tools4VIP" />
+    <meta property="og:url" content="https://www.Tools4VIP.com/" />
+    <meta property="og:image" content="/logotools4vip.png" />
+
+    <link rel="shortcut icon" href="/logotools4vip.png" type="image/x-icon" />
+
+
+    <script src='https://unpkg.com/tesseract.js@v2.0.2/dist/tesseract.min.js'></script>
+
+
+
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&family=Lato">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <div class="navlistOverlay"></div>
+
+    <!-- <div class="main-wraper">   -->
+    <div class="main-wraper">
+
+        <!-- main container -->
+        <div class="main-container">
+
+            <!-- header area Start-->
+            <!-- nav saction start -->
+            <div class="nav-saction">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <img class="menubars" alt="menubars" src="/menubars.svg">
+                    </label>
+                    <label class="logo">
+                        <a href="https://www.Tools4VIP.com/">
+                            <img class="logo-img" src="/logotools4vip.png" alt="Tools4VIP">
+                        </a>
+                    </label>
+                    <ul id="navbar">
+                        <!-- <div class="cust-nav-center"> -->
+                        <li><a class="  active " href="/index.html">Home</a>
+                        </li>
+                        <!-- tool start  -->
+                        <!-- pdf-to-text -->
+                        <li><a class=" " href="/vidtotext.html">Video To Text</a></li>
+
+                        <!-- pdf-to-word -->
+                        <li><a class=" " href="">PDF To Text</a></li>
+                        <!-- tool end -->
+                        <!-- image to text -->
+                        <li><a class=" " href="">Image To Text</a></li>
+                        <!-- tool end -->
+
+
+                        <li><a class="" href="">Video to Frame</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+            <div style="position:relative;">
+
+
+
+
+                <h1 id="headingmain">Video to Text Converter</h1>
+
+                <input type="file" id="videoInput">
+
+                <div id="progressBarContainer">
+                    <div id="progressBar"></div>
+                </div>
+
+                <div>
+                    <label id="sella" for="languageSelect">Select language:</label>
+                    <select id="languageSelect">
+                        <option value="eng">English</option>
+                        <option value="spa">Spanish</option>
+                        <option value="fra">French</option>
+                        <option value="deu">German</option>
+                        <option value="ita">Italian</option>
+                        <option value="hin">Hindi</option>
+                        <!-- add more language options as desired -->
+                    </select>
+                </div>
+                <textarea id="outputTextarea"></textarea>
+                <div class="processing-spinner">
+                    <div class="spinner"></div>
+                </div>
+
+
+
+
+
+
+
+
+                <!-- feature saction start -->
+                <div class="feature-section">
+                    <div class="feature-heading">
+                        <h2>Our Features</h2>
+                    </div>
+                    <div class="feature-footer">
+                        <div class="feature-right">
+                            <div class="inner">
+                                <h3>Drag and drop feature that give you best experience.</h3>
+                                <div class="innerlist">
+                                    <div class="listItem">
+                                        <span class="dot1"></span><span class="dotText">Add Video or Image easily</span>
+                                    </div>
+                                    <div class="listItem">
+                                        <span class="dot2"></span><span class="dotText">Edit your preview on
+                                            card</span>
+                                    </div>
+                                    <div class="listItem">
+                                        <span class="dot3"></span><span class="dotText">Easy to use</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-left">
+                            <div class="first-row">
+                                <div class="box1">
+                                    <img alt="Best OCR Online" src="icons8-ocr-100.png">
+                                    <h3 class="heading">Unlimited Free OCR Online</h3>
+                                    <p class="detail">
+                                    <p>Revolutionary platform offering world's first video-to-text and bulk
+                                        image-to-text conversion services with precision and speed.
+                                    </p>
+                                    </p>
+                                </div>
+                                <div class="box2">
+                                    <img alt="No Daily Limit" src="/24h-1.jpg">
+                                    <h3 class="heading">No Daily Limit</h3>
+                                    <p class="detail">
+                                    <p>Convert unlimited images, video and PDF into text for free with no daily limit.
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="second-row">
+                                <div class="box1">
+                                    <img alt="Any Type of pic" src="/icons8-language-64.png">
+                                    <h3 class="heading">120+ language support</h3>
+                                    <p class="detail">
+                                    <p>Tools4VIP offers unparalleled language support with 120+ languages available for
+                                        video-to-text and bulk image-to-text conversion.</p>
+                                    </p>
+                                </div>
+                                <div class="box2">
+                                    <img alt="Copy / Download" src="/icons8-copy-64.png">
+                                    <h3 class="heading">
+                                        Copy Effortlessly </h3>
+                                    <p class="detail">
+                                    <p>Copy your converted text hassle-free with Tools4VIP's user-friendly platform,
+                                        designed for easy access and convenience.</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- feature saction end -->
+
+
+
+
+                <!-- <input type="hidden" name="imageurl" id="imageurl"> -->
+
+
+            </div>
+            <!-- main container - End -->
+
+
+            <div class="msg" id="msg">
+                <!-- <div class="success">Copied</div> -->
+            </div>
+
+            <!-- footer start -->
+            <div class="footer">
+                <div class="">
+                    <img class="footerTopLine" alt="footer bar line" src="/Group202.svg">
+                </div>
+
+
+                <div class="main-container">
+                    <div class="row-second">
+                        <div class="col1">
+                            <p class="titel">About</p>
+                            <p class="listItem">Tools4VIP is a revolutionary Optical Character Recognition (OCR)
+                                software for video-to-text and bulk image-to-text conversion with 120+ language support
+                                and easy text copying.</p>
+                            <p><a href="#" class="listItem"> </a></p>
+                            <p><a href="#" class="listItem"> </a></p>
+                        </div>
+                        <div class="col2">
+                            <p class="titel">Information</p>
+                            <p><a href="" class="listItem">Terms & Conditions</a>
+                            </p>
+                            <p><a href="" class="listItem">Privacy Policy</a></p>
+                        </div>
+                        <div class="col3">
+                            <p class="titel">Contact Us</p>
+                            <p><a href="#" class="listItem"> </a></p>
+                            <p><a href="tel:" class="listItem"> </a></p>
+                            <p><a href="" class="listItem">Get in touch</a></p>
+                            <p><a href="" class="listItem">Dstudios.reply@gmail.com</span></a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row-three-copyright">
+                    <p>Copyright © All rights reserved By <a target="_blank" href="https://www.Tools4VIP.com">Tools4VIP
+                        </a></p>
+                </div>
+            </div>
+
+
+
+
+            <script>
+                const videoInput = document.getElementById('videoInput');
+                const outputTextarea = document.getElementById('outputTextarea');
+                const languageSelect = document.getElementById('languageSelect');
+
+                // Add progress bar
+                const progressBarContainer = document.createElement('div');
+                progressBarContainer.id = 'progressBarContainer';
+                const progressBar = document.createElement('div');
+                progressBar.id = 'progressBar';
+                // progressBarContainer.appendChild(progressBar);
+                // document.body.appendChild(progressBarContainer);
+
+                // Scroll down to the bottom of the textarea
+                outputTextarea.scrollTop = outputTextarea.scrollHeight;
+
+                videoInput.addEventListener('change', () => {
+                    const video = document.createElement('video');
+                    video.src = URL.createObjectURL(videoInput.files[0]);
+                    video.controls = true;
+                    video.id = 'videoPlayer';
+                    video.load();
+
+                    video.addEventListener('loadedmetadata', () => {
+                        const duration = video.duration;
+                        const chunkSize = 10; // process 10-second chunks
+                        let currentTime = 0;
+
+                        const processChunk = () => {
+                            const canvas = document.createElement('canvas');
+                            canvas.width = video.videoWidth / 4; // use a smaller canvas size
+                            canvas.height = video.videoHeight / 4;
+
+                            const endTime = Math.min(currentTime + chunkSize, duration);
+                            const interval = setInterval(() => {
+                                const ctx = canvas.getContext('2d');
+                                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                                const dataURL = canvas.toDataURL('image/jpeg', 0.5); // use JPEG format with 50% quality
+                                Tesseract.recognize(dataURL, languageSelect.value).then(({ data: { text } }) => {
+                                    outputTextarea.value += text;
+                                    // Scroll down to the bottom of the textarea
+                                    outputTextarea.scrollTop = outputTextarea.scrollHeight;
+                                });
+                                video.currentTime += 1;
+
+                                // Update progress bar
+                                const progressBar = document.getElementById('progressBar');
+                                const progressPercent = (video.currentTime / duration) * 100;
+                                progressBar.style.width = progressPercent + '%';
+
+                                if (video.currentTime >= endTime) {
+                                    clearInterval(interval);
+                                    if (endTime < duration) {
+                                        currentTime = endTime;
+                                        setTimeout(processChunk, 0);
+                                    }
+                                }
+                            }, 1000);
+                        };
+
+                        processChunk();
+                    });
+                    
+                });
+
+
+
+            </script>
+</body>
+
+</html>
