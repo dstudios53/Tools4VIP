@@ -173,7 +173,7 @@ button[type="button"]:hover {
 }
 
 #progressBar {
-    width: 50%;
+    width: 0%;
     height: 20px;
     border-radius: 20px;
     background-color: #4CAF50;
